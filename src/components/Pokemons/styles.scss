@@ -1,0 +1,28 @@
+.Pokemons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    min-height: 30vh;
+  }
+  &__button {
+    color: white;
+    background-color: red;
+    font-size: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  &__loading {
+    font-size: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+  }
+}
