@@ -1,0 +1,47 @@
+.PokemonCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  width: 8rem;
+  height: 6rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.4s ease-out;
+
+  &__title {
+    text-align: center;
+    margin: 0;
+  }
+  &__photo {
+    height: 80%;
+    display: flex;
+    align-items: center;
+  }
+  &__button {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+}
+.PokemonCard:hover {
+  transition: all 0.4s ease-out;
+  box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.PokemonCard:hover .PokemonCard__img {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  left: 32px;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 25px;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
