@@ -1,0 +1,64 @@
+.PokemonDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem auto;
+  min-height: calc(100vh - 118px);
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem;
+    min-width: 18rem;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
+
+    &__subtitle {
+      text-align: left;
+      font-size: 1rem;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    &__photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__img {
+      height: 40vh;
+    }
+    &__name {
+      text-align: center;
+      margin: 0;
+    }
+    &__description {
+      text-align: justify;
+    }
+
+    &__button {
+      background-color: lightblue;
+      font-size: 1.2rem;
+      padding: 0.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .PokemonDetail {
+    min-height: calc(100vh - 114px);
+
+    &__card {
+      box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.15);
+
+      &__photo {
+        height: auto;
+      }
+    }
+  }
+}
